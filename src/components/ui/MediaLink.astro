@@ -8,7 +8,7 @@ const { alt, href, name }: MahoySocialMedia = Astro.props.mediaLink;
   class="flex items-center mx-auto font-semibold hover:scale-110 gap-1 transition-all duration-200"
 >
   <img
-    loading="lazy"
+    loading="eager"
     title={name}
     class="size-7"
     src=`/src/assets/${name.toLowerCase()}.svg`

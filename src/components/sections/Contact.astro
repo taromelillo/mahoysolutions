@@ -27,7 +27,7 @@ const link = Astro.props.link;
           class="flex justify-center items-center font-semibold gap-1 transition-all duration-200"
         >
           <img
-            loading="lazy"
+            loading="eager"
             class="size-7"
             src=`/src/assets/${telephone.name.toLocaleLowerCase()}.svg`
             alt={telephone.alt}
@@ -42,7 +42,7 @@ const link = Astro.props.link;
           class="flex justify-center items-center font-semibold gap-1 transition-all duration-200"
         >
           <img
-            loading="lazy"
+            loading="eager"
             class="size-7"
             src=`/src/assets/${email.name.toLocaleLowerCase()}.svg`
             alt={email.name}
