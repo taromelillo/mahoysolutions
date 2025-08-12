@@ -1,0 +1,184 @@
+{
+    "title": "Mahoy Solutions",
+    "metadata": {
+        "title": "Mahoy Solutions",
+        "description": "We create high-impact digital experiences. We offer web development, landing pages, e-commerce, UX/UI design, and optimization for your online business success.",
+        "locale": "en_US",
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Mahoy Solutions",
+            "url": "https://www.mahoysolutions.com",
+            "logo": "https://www.mahoysolutions.com/favicon.svg",
+            "description": "We create high-impact digital experiences. We offer web development, landing pages, e-commerce, UX/UI design, and optimization for your online business success.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+5491126893321",
+                "contactType": "customer service",
+                "email": "mahoysolutions@gmail.com",
+                "areaServed": "Global",
+                "availableLanguage": [
+                    "en",
+                    "es"
+                ]
+            },
+            "sameAs": [
+                "https://www.facebook.com/YourWebDevelopmentBrand"
+            ],
+            "potentialAction": {
+                "@type": "CallByPhoneAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "tel:+5491126893321"
+                },
+                "actionOption": "Call"
+            },
+            "makesOffer": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Landing Page Design and Development",
+                        "description": "Creation of attractive and high-converting landing pages."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Development",
+                        "description": "Complete e-commerce solutions to sell your products online."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Development",
+                        "description": "Tailored website development to meet your specific needs."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "UX/UI Design",
+                        "description": "Designing intuitive user experiences and attractive user interfaces."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Responsive Web Design",
+                        "description": "Ensuring your website looks and functions perfectly on all devices."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Website Optimization",
+                        "description": "Improving your website's performance, speed, and visibility."
+                    }
+                }
+            ]
+        }
+    },
+    "links": {
+        "services": "Services",
+        "methodology": "Methodology",
+        "contact": "Contact"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "alt": "Mahoy Solutions Facebook page",
+                "href": "/"
+            },
+            {
+                "name": "Whatsapp",
+                "alt": "Mahoy Solutions WhatsApp",
+                "href": "https://www.facebook.com/profile.php?id=61579004535728"
+            }
+        ]
+    },
+    "index": {
+        "heroes": {
+            "heroTitle": "We Build the Digital Future",
+            "heroText": "We craft exceptional web experiences that drive your business forward. From high-converting landing pages to full e-commerce solutions, we turn your ideas into digital reality.",
+            "heroButton": "Contact Us"
+        },
+        "services": [
+            {
+                "icon": "🚀",
+                "title": "Landing Pages",
+                "description": "High-conversion pages designed to capture leads and maximize your sales with responsive design and SEO optimization."
+            },
+            {
+                "icon": "🛒",
+                "title": "E-commerce",
+                "description": "Complete online stores with payment gateways, inventory management, and optimized user experience."
+            },
+            {
+                "icon": "💻",
+                "title": "Web Development",
+                "description": "Custom web applications using the latest technologies and most advanced frameworks on the market."
+            },
+            {
+                "icon": "📱",
+                "title": "Responsive Design",
+                "description": "Websites that perfectly adapt to any device, ensuring an optimal experience on mobiles and tablets."
+            },
+            {
+                "icon": "⚡",
+                "title": "Optimization",
+                "description": "We improve loading speed, SEO, and your website's performance to maximize conversions."
+            },
+            {
+                "icon": "🎨",
+                "title": "UI/UX Design",
+                "description": "Intuitive interfaces and exceptional user experiences that connect with your audience and increase retention."
+            }
+        ],
+        "process": [
+            {
+                "step": "1",
+                "title": "Analysis and Strategy",
+                "description": "We study your business, audience, and objectives to create a personalized digital strategy."
+            },
+            {
+                "step": "2",
+                "title": "Design and Prototyping",
+                "description": "We create wireframes and interactive prototypes to visualize the final user experience."
+            },
+            {
+                "step": "3",
+                "title": "Development",
+                "description": "We build your website with clean, optimized code following industry best practices."
+            },
+            {
+                "step": "4",
+                "title": "Testing and Launch",
+                "description": "We conduct exhaustive testing and optimize every detail before the official launch."
+            }
+        ],
+        "contact": {
+            "title": "Let's Talk About Your Project",
+            "description": "Do you have an amazing idea? We'd love to hear it and help you make it a reality. Contact our team and discover how we can transform your vision into an exceptional digital experience.",
+            "email": {
+                "gmail": "mahoysolutions@gmail.com",
+                "href": "mailto:mahoysolutions@gmail.com?subject=Request for Information on Your Services",
+                "name": "Gmail"
+            },
+            "telephone": {
+                "tel": "+5491126893321",
+                "href": "tel:+5491126893321",
+                "alt": "Call now",
+                "name": "tel"
+            }
+        }
+    }
+}

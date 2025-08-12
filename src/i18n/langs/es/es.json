@@ -1,0 +1,186 @@
+{
+    "title": "Mahoy Solutions",
+    "metadata": {
+        "title": "Mahoy Solutions",
+        "description": "Creamos experiencias digitales de alto impacto. Ofrecemos desarrollo web, landing pages, e-commerce, diseño UX/UI y optimización para el éxito de tu negocio online.",
+        "locale": "es_ES",
+        "site_name": "",
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Mahoy Solutions",
+            "url": "https://www.mahoysolutions.com",
+            "logo": "https://www.mahoysolutions.com/favicon.svg",
+            "description": "Creamos experiencias digitales de alto impacto. Ofrecemos desarrollo web, landing pages, e-commerce, diseño UX/UI y optimización para el éxito de tu negocio online.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+5491126893321",
+                "contactType": "customer service",
+                "email": "mahoysolutions@gmail.com",
+                "areaServed": "Global",
+                "availableLanguage": [
+                    "es",
+                    "en"
+                ]
+            },
+            "sameAs": [
+                "https://www.facebook.com/TuMarcaDeDesarrolloWeb"
+            ],
+            "potentialAction": {
+                "@type": "CallByPhoneAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "tel:+5491126893321"
+                },
+                "actionOption": "Call"
+            },
+            "makesOffer": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diseño y Desarrollo de Landing Pages",
+                        "description": "Creación de landing pages atractivas y de alta conversión."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desarrollo de E-commerce",
+                        "description": "Soluciones completas de comercio electrónico para vender tus productos online."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desarrollo Web Personalizado",
+                        "description": "Desarrollo de sitios web a medida para satisfacer tus necesidades específicas."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diseño UX/UI",
+                        "description": "Diseño de experiencias de usuario intuitivas y atractivas interfaces de usuario."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diseño Web Responsive",
+                        "description": "Aseguramos que tu sitio web se vea y funcione perfectamente en todos los dispositivos."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Optimización Web",
+                        "description": "Mejora del rendimiento, velocidad y visibilidad de tu sitio web."
+                    }
+                }
+            ]
+        }
+    },
+    "links": {
+        "services": "Servicios",
+        "methodology": "Metodología",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "alt": "Facebook de Mahoy Solutions",
+                "href": "https://www.facebook.com/profile.php?id=61579004535728"
+            },
+            {
+                "name": "Whatsapp",
+                "alt": "WhatsApp de Mahoy Solutions",
+                "href": "https://api.whatsapp.com/send?phone=5491126893321"
+            }
+        ]
+    },
+    "index": {
+        "heroes": {
+            "heroTitle": "Dessarrollamos el Futuro Digital",
+            "heroText": "Creamos experiencias web excepcionales que impulsan tu negocio. Desde landing pages hasta ecommerce completos, transformamos tus ideas en realidad digital.",
+            "heroButton": "Contactanos"
+        },
+        "services": [
+            {
+                "icon": "🚀",
+                "title": "Landing Pages",
+                "description": "Páginas de alta conversión diseñadas para captar leads y maximizar tus ventas con diseño responsive y optimización SEO."
+            },
+            {
+                "icon": "🛒",
+                "title": "E-commerce",
+                "description": "Tiendas online completas con pasarelas de pago, gestión de inventario y experiencia de usuario optimizada."
+            },
+            {
+                "icon": "💻",
+                "title": "Desarrollo Web",
+                "description": "Aplicaciones web personalizadas utilizando las últimas tecnologías y frameworks más avanzados del mercado."
+            },
+            {
+                "icon": "📱",
+                "title": "Diseño Responsive",
+                "description": "Sitios web que se adaptan perfectamente a cualquier dispositivo, garantizando una experiencia óptima en móviles y tablets."
+            },
+            {
+                "icon": "⚡",
+                "title": "Optimización",
+                "description": "Mejoramos la velocidad de carga, SEO y rendimiento de tu sitio web para maximizar las conversiones."
+            },
+            {
+                "icon": "🎨",
+                "title": "UI/UX Design",
+                "description": "Interfaces intuitivas y experiencias de usuario excepcionales que conectan con tu audiencia y aumentan la retención."
+            }
+        ],
+        "process": [
+            {
+                "step": "1",
+                "title": "Análisis y Estrategia",
+                "description": "Estudiamos tu negocio, audiencia y objetivos para crear una estrategia digital personalizada."
+            },
+            {
+                "step": "2",
+                "title": "Diseño y Prototipado",
+                "description": "Creamos wireframes y prototipos interactivos para visualizar la experiencia final del usuario."
+            },
+            {
+                "step": "3",
+                "title": "Desarrollo",
+                "description": "Construimos tu sitio web con código limpio, optimizado y siguiendo las mejores prácticas del sector."
+            },
+            {
+                "step": "4",
+                "title": "Testing y Lanzamiento",
+                "description": "Realizamos pruebas exhaustivas y optimizamos cada detalle antes del lanzamiento oficial."
+            }
+        ],
+        "contact": {
+            "title": "Hablemos de tu Proyecto",
+            "description": "¿Tienes una idea increíble? Nos encantaría escucharla y ayudarte a hacerla realidad. Contacta con nuestro equipo y descubre cómo podemos transformar tu visión en una experiencia digital excepcional.",
+            "email": {
+                "gmail": "mahoysolutions@gmail.com",
+                "href": "mailto:mahoysolutions@gmail.com?subject=Solicitud de información sobre sus servicios",
+                "name": "Gmail",
+                "alt": "Envienos un email"
+            },
+            "telephone": {
+                "tel": "+5491126893321",
+                "href": "tel:+5491126893321",
+                "alt": "Llame ahora",
+                "name": "tel"
+            }
+        }
+    }
+}

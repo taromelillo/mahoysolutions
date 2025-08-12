@@ -1,0 +1,29 @@
+---
+import Contact from "@components/sections/Contact.astro";
+import Hero from "@components/sections/Hero.astro";
+import Processes from "@components/sections/Processes.astro";
+import Services from "@components/sections/Services.astro";
+import { getLangFromUrl, useTranslation } from "@i18n/utils";
+import Layout from "@layouts/Layout.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const { links, index, metadata, title, footer }: MahoyData =
+  useTranslation(lang);
+---
+
+<Layout
+  links={links}
+  title={title}
+  index={index}
+  metadata={metadata}
+  footer={footer}
+>
+  <Hero hero={index.heroes} links={links} />
+  <Services link={links.services} services={index.services} />
+  <Processes link={links.methodology} processes={index.process} />
+  <Contact
+    contact={index.contact}
+    link={links.contact}
+    socialMedia={footer.socialMedia}
+  />
+</Layout>

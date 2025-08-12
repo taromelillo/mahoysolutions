@@ -1,0 +1,70 @@
+---
+const { links }: Record<string, MahoyLink> = Astro.props;
+
+import { Icon } from "astro-icon/components";
+// const isOpen = window.localStorage.getItem("mhs-ui") || false;
+---
+
+<div id="sidenav" class="md:hidden">
+  <div class="hidden bg-gray-500"></div>
+  <div
+    class="hidden fixed top-0 left-0 w-screen h-screen z-10 bg-black opacity-30"
+  >
+  </div>
+  <div
+    class="hidden fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter backdrop-blur-sm"
+  >
+  </div>
+
+  <nav
+    id="xs-nav"
+    class:list={[
+      "flex flex-col  fixed p-8 right-0 top-0 z-20 bg-amber-50 border-l-1 border-l-light-gray w-[250px] h-screen transform transition-all duration-300",
+      {
+        "translate-x-full": true,
+      },
+    ]}
+  >
+    <button id="close-btn" class="size-8 self-end">
+      <Icon name="close-menu" size="32" />
+    </button>
+
+    <ul class="flex flex-col gap-7 mt-7">
+      <li>
+        <a href=`#${links.services.toLowerCase()}`>{links.services}</a>
+      </li>
+
+      <li>
+        <a href=`#${links.methodology.toLowerCase()}`>{links.methodology}</a>
+      </li>
+
+      <li>
+        <a href=`#${links.contact.toLowerCase()}`>{links.contact}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  const closeBtn = document.getElementById("close-btn") as HTMLButtonElement;
+
+  const nav = document.getElementById("xs-nav") as HTMLDivElement;
+  const sidenav: NodeListOf<HTMLDivElement> =
+    document.querySelectorAll("#sidenav div");
+
+  const sideAhref: NodeListOf<HTMLAnchorElement> =
+    document.querySelectorAll("#xs-nav a");
+
+  const hidder = (div: HTMLDivElement) => div.classList.toggle("hidden");
+
+  const eventHidder = () => {
+    sidenav.forEach(hidder);
+    nav.classList.toggle("translate-x-full");
+  };
+
+  sidenav.forEach((div) => div.addEventListener("click", eventHidder));
+
+  closeBtn.addEventListener("click", eventHidder);
+
+  sideAhref.forEach((a) => a.addEventListener("click", eventHidder));
+</script>

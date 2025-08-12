@@ -1,0 +1,11 @@
+---
+import MediaLink from "@components/ui/MediaLink.astro";
+
+const socialMedia: MahoySocialMedia[] = Astro.props.socialMedia;
+---
+
+<div
+  class="h-full flex w-full flex-col sm:flex-row sm:flex-wrap justify-center gap-7"
+>
+  {socialMedia.map((media) => <MediaLink mediaLink={media} />)}
+</div>

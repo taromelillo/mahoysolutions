@@ -1,0 +1,21 @@
+---
+const { step, title, description }: MahoyProcessStep = Astro.props.process;
+---
+
+<article class="col-span-1 min-h-[150px] my-5 mx-7 p-5 animation-reveal">
+  <div class="flex items-center gap-3 my-3">
+    <span
+      class="bg-secondary rounded-full text-md font-bold size-8 text-primary flex items-center justify-center"
+    >
+      <p>
+        {step}
+      </p>
+    </span>
+    <h3 class="font-bold">
+      {title}
+    </h3>
+  </div>
+  <p class="text-balance pl-3">
+    {description}
+  </p>
+</article>

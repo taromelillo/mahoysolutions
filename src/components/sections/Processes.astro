@@ -1,0 +1,19 @@
+---
+import Process from "@components/ui/Process.astro";
+const link = Astro.props.link;
+const processes: MahoyProcessStep[] = Astro.props.processes;
+---
+
+<section
+  id=`${link.toLowerCase()}`
+  class="w-full bg-primary flex flex-col py-7 gap-1"
+>
+  <h2
+    class="ml-7 text-4xl font-semibold bg-clip-text bg-gradient-to-br from-secondary to-primary text-transparent"
+  >
+    {link}
+  </h2>
+  <div class="w-full grid grid-cols-1 sm:grid-cols-2">
+    {processes.map((process) => <Process process={process} />)}
+  </div>
+</section>

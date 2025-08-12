@@ -1,0 +1,32 @@
+---
+const { contact, services, methodology }: MahoyLink = Astro.props.links;
+import { Icon } from "astro-icon/components";
+import Link from "@components/ui/Link.astro";
+---
+
+<header
+  class="fixed top-0 max-w-[1440px] h-20 w-full mx-auto p-5 flex justify-between items-center backdrop-blur-xl z-10"
+>
+  <p class="text-2xl">Mahoy Solutions</p>
+  <button id="menu-btn" class="sm:hidden">
+    <Icon name="hamburger-menu" size={32} />
+  </button>
+  <nav class="hidden sm:flex gap-0.5">
+    <ul class="flex gap-2">
+      <Link link={services} />
+      <Link link={methodology} />
+      <Link link={contact} />
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn") as HTMLButtonElement;
+  const nav = document.getElementById("xs-nav") as HTMLDivElement;
+  const sidenav: NodeListOf<HTMLDivElement> =
+    document.querySelectorAll("#sidenav div");
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("translate-x-full");
+    sidenav.forEach((div) => div.classList.toggle("hidden"));
+  });
+</script>
