@@ -4,7 +4,7 @@ import Hero from "@components/sections/Hero.astro";
 import Processes from "@components/sections/Processes.astro";
 import Services from "@components/sections/Services.astro";
 import { getLangFromUrl, useTranslation } from "@i18n/utils";
-import Layout from "@layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const { links, index, metadata, title, footer }: MahoyData =
