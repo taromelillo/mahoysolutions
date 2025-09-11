@@ -1,0 +1,47 @@
+---
+import Input from "./Input.astro";
+import { actions } from "astro:actions";
+const { name, email, telephone, consult } = Astro.props.form;
+
+const result = Astro.getActionResult(actions.contactForm);
+---
+
+{result?.error && <p class="error">Wrong data</p>}
+
+<form
+  class="col-span-1 flex flex-col gap-2 py-5"
+  method="post"
+  action={actions.contactForm}
+  enctype="multipart/form-data"
+>
+  <Input name="name" placeholder={name} />
+  <Input type="email" name="email" placeholder={email} />
+  <Input name="tel" type="number" placeholder={telephone} />
+  <textarea
+    name="consult"
+    required
+    placeholder={consult}
+    class="resize-none px-5 py-2.5 mx-auto max-w-[500px] min-w-[300px] border-b-[1px] bg-white border-black focus:border-slate-400 focus:bg-white outline-none transition-all duration-300"
+  ></textarea>
+  <button
+    type="submit"
+    class="bg-secondary text-primary py-2 px-4 rounded-lg border-[1px] border-secondary transition-colors duration-500 hover:bg-primary hover:text-secondary hover:border-gray cursor-pointer mx-auto"
+    >Enviar consulta</button
+  >
+
+  <script>
+    import { actions } from "astro:actions";
+
+    const form = document.querySelector("form");
+    form?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const { error } = await actions.contactForm(formData);
+
+      if (!error) {
+        form.reset();
+      }
+    });
+  </script>
+</form>

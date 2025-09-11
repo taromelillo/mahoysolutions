@@ -29,6 +29,18 @@ export default defineConfig({
         context: "server",
         access: "public",
       }),
+      EMAIL_PORT: envField.string({
+        context: "server",
+        access: "secret",
+      }),
+      USER: envField.string({
+        context: "server",
+        access: "secret",
+      }),
+      PASSKEY: envField.string({
+        context: "server",
+        access: "secret",
+      }),
     },
   },
 });

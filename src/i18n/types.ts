@@ -61,6 +61,7 @@ interface MahoyContact {
     alt: string;
     name: string;
   };
+  form: MahoyForm;
 }
 
 // ----------
@@ -70,4 +71,11 @@ interface Metadata {
   description: string;
   locale: string;
   structuredData: any;
+}
+
+interface MahoyForm {
+  name: string;
+  email: string;
+  telephone: string;
+  consult: string;
 }

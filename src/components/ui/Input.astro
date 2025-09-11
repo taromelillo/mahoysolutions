@@ -1,0 +1,13 @@
+---
+const { type = "text", placeholder, name } = Astro.props;
+---
+
+<input
+  id={name}
+  {name}
+  {type}
+  {placeholder}
+  autocomplete="true"
+  required
+  class="px-5 py-2.5 mx-auto max-w-[500px] min-w-[300px] border-b-[1px] bg-white border-black focus:border-slate-400 focus:bg-white outline-none transition-all duration-300"
+/>

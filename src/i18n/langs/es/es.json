@@ -10,7 +10,7 @@
             "@type": "Organization",
             "name": "Mahoy Solutions",
             "url": "https://www.mahoysolutions.com",
-            "logo": "https://www.mahoysolutions.com/favicon.svg",
+            "logo": "https://www.mahoysolutions.com/logo1.png",
             "description": "Creamos experiencias digitales de alto impacto. Ofrecemos desarrollo web, landing pages, e-commerce, diseño UX/UI y optimización para el éxito de tu negocio online.",
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -180,6 +180,12 @@
                 "href": "tel:+5491126893321",
                 "alt": "Llame ahora",
                 "name": "tel"
+            },
+            "form": {
+                "name": "Nombre",
+                "email": "email@email.com",
+                "telephone": "Telefono",
+                "consult": "Cuentanos sobre tu proyecto y preguntas"
             }
         }
     }

@@ -4,6 +4,7 @@ export const matches: String[] = [
   "/sitemap-index.xml",
   // "/es/api/send",
   // "/en/api/send",
+  "/_actions/contactForm/",
   "/es",
   "/en",
 ];
