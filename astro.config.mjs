@@ -19,7 +19,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
     ssr: {
       external: [
-        "node:fs/promises",
         "node:path",
         "node:url",
         "node:crypto",
