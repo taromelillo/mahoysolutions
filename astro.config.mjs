@@ -28,7 +28,6 @@ export default defineConfig({
         "node:url",
         "node:net",
         "node:dns",
-        "node:crypto",
         "node:fs",
         "node:os",
         "node:child_process",
