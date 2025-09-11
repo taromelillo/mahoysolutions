@@ -18,7 +18,27 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     ssr: {
-      external: ["node:fs/promises", "node:path", "node:url", "node:crypto"],
+      external: [
+        "node:fs/promises",
+        "node:path",
+        "node:url",
+        "node:crypto",
+        "events",
+        "util",
+        "url",
+        "net",
+        "dns",
+        "crypto",
+        "fs",
+        "os",
+        "child_process",
+        "http",
+        "https",
+        "zlib",
+        "stream",
+        "path",
+        "tls",
+      ],
     },
   },
 
