@@ -13,9 +13,6 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (pathname === "/" || !matches.includes(pathname)) {
     return Response.redirect(`${context.url.origin}/${lang}`, 301);
   }
-  // if (!matches.filter((match) => match === pathname)) {
-  //   return Response.redirect(`${context.url.origin}/${lang}`, 301);
-  // }
-  // pathname;
+
   return response;
 });
