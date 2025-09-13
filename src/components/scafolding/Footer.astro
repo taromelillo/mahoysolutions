@@ -1,9 +1,14 @@
 ---
+import MediaLink from "@components/ui/MediaLink.astro";
 
+const { socialMedia } = Astro.props.footer;
 ---
 
 <footer
   class="max-w-[1440px] w-full h-20 mx-auto p-5 flex justify-between items-center"
 >
-  <p class="mx-auto">© 2025 Mahoy Solutions</p>
+  <div class="h-full flex items-center gap-3 mx-auto">
+    <p class="mx-auto">© 2025 Mahoy Solutions |</p>
+    {socialMedia.map((media) => <MediaLink mediaLink={media} />)}
+  </div>
 </footer>
