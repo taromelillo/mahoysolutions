@@ -13,7 +13,7 @@ const link = Astro.props.link;
   class="w-full grid grid-cols-1 sm:grid-cols-2 py-7 bg-white"
 >
   <article
-    class="col-span-1 flex flex-col gap-7 px-4 justify-start items-center"
+    class="col-span-1 sm:col-span-2 max-w-[750px] mx-auto flex flex-col gap-7 px-4 justify-start items-center"
   >
     <h2
       class="mx-7 text-4xl font-semibold bg-clip-text bg-gradient-to-br from-secondary to-primary text-transparent"
@@ -22,5 +22,4 @@ const link = Astro.props.link;
     </h2>
     <p class="mx-7 text-center text-pretty">{description}</p>
   </article>
-  <ContactForm {form} />
 </section>

@@ -8,7 +8,6 @@ import tailwindcss from "@tailwindcss/vite";
 import cloudflare from "@astrojs/cloudflare";
 
 import icon from "astro-icon";
-import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,34 +16,9 @@ export default defineConfig({
   integrations: [sitemap(), icon()],
 
   vite: {
-    plugins: [
-      tailwindcss(),
-      nodePolyfills({
-        include: ["crypto", "stream", "util", "buffer"],
-      }),
-    ],
+    plugins: [tailwindcss()],
     ssr: {
-      external: [
-        "node:fs/promises",
-        "events",
-        "util",
-        "node:url",
-        "node:path",
-        "vm",
-        "url",
-        "net",
-        "dns",
-        "crypto",
-        "fs",
-        "os",
-        "child_process",
-        "http",
-        "https",
-        "zlib",
-        "stream",
-        "path",
-        "tls",
-      ],
+      external: ["node:fs/promises", "node:path", "node:url", "node:crypto"],
     },
   },
 
