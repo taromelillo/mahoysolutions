@@ -6,9 +6,12 @@ import Services from "@components/sections/Services.astro";
 import { getLangFromUrl, useTranslation } from "@i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
+const testingLang = Astro.locals;
+
+console.log("Testing language:", testingLang);
+
 const lang = getLangFromUrl(Astro.url);
-const { links, index, metadata, title, footer }: MahoyData =
-  useTranslation(lang);
+const { links, index, metadata, title, footer } = useTranslation(lang);
 ---
 
 <Layout

@@ -1,6 +1,6 @@
 ---
 import Service from "@components/ui/Service.astro";
-const services: MahoyService[] = Astro.props.services;
+const services = Astro.props.services;
 const link = Astro.props.link;
 ---
 
@@ -14,6 +14,6 @@ const link = Astro.props.link;
     {link}
   </h2>
   <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-7">
-    {services.map((service) => <Service service={service} />)}
+    {services.map((service) => <Service {service} />)}
   </div>
 </section>

@@ -1,4 +1,4 @@
-import { i18n } from "./i18n";
+import { i18n, type Translation } from "./i18n";
 
 enum Languages {
   "English" = "en",
@@ -11,12 +11,9 @@ export function getLangFromUrl(url: URL): Languages {
   return lang === Languages.Spanish ? Languages.Spanish : Languages.Default;
 }
 
-export function useTranslation(lang: Languages): MahoyData {
+export function useTranslation(lang: Languages): Translation {
   lang === Languages.Spanish
     ? (lang = Languages.Spanish)
     : (lang = Languages.Default);
-  // return function t(key: keyof (typeof i18n)[typeof lang]) {
-  //   return i18n[lang][key];
   return i18n[lang];
-  // };
 }

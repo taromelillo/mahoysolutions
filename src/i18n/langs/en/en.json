@@ -13,28 +13,6 @@
             "url": "https://www.mahoysolutions.com",
             "logo": "https://www.mahoysolutions.com/logo1.png",
             "description": "We create high-impact digital experiences. We offer web development, landing pages, e-commerce, UX/UI design, and optimization for your online business success.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+5491126893321",
-                "contactType": "customer service",
-                "email": "mahoysolutions@gmail.com",
-                "areaServed": "Global",
-                "availableLanguage": [
-                    "en",
-                    "es"
-                ]
-            },
-            "sameAs": [
-                "https://www.facebook.com/YourWebDevelopmentBrand"
-            ],
-            "potentialAction": {
-                "@type": "CallByPhoneAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "tel:+5491126893321"
-                },
-                "actionOption": "Call"
-            },
             "makesOffer": [
                 {
                     "@type": "Offer",
@@ -98,12 +76,12 @@
             {
                 "name": "Facebook",
                 "alt": "Mahoy Solutions Facebook page",
-                "href": "/"
+                "href": "https://www.facebook.com/profile.php?id=61579004535728"
             },
             {
                 "name": "Whatsapp",
                 "alt": "Mahoy Solutions WhatsApp",
-                "href": "https://www.facebook.com/profile.php?id=61579004535728"
+                "href": "https://api.whatsapp.com/send?phone=5491126893321"
             }
         ]
     },

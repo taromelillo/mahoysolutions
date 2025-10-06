@@ -13,28 +13,6 @@
             "url": "https://www.mahoysolutions.com",
             "logo": "https://www.mahoysolutions.com/logo1.png",
             "description": "Creamos experiencias digitales de alto impacto. Ofrecemos desarrollo web, landing pages, e-commerce, diseño UX/UI y optimización para el éxito de tu negocio online.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+5491126893321",
-                "contactType": "customer service",
-                "email": "mahoysolutions@gmail.com",
-                "areaServed": "Global",
-                "availableLanguage": [
-                    "es",
-                    "en"
-                ]
-            },
-            "sameAs": [
-                "https://www.facebook.com/TuMarcaDeDesarrolloWeb"
-            ],
-            "potentialAction": {
-                "@type": "CallByPhoneAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "tel:+5491126893321"
-                },
-                "actionOption": "Call"
-            },
             "makesOffer": [
                 {
                     "@type": "Offer",

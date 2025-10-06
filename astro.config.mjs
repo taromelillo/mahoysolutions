@@ -15,6 +15,13 @@ export default defineConfig({
   site: "https://www.mahoysolutions.com",
   integrations: [sitemap(), icon()],
 
+  i18n: {
+    defaultLocale: "en",
+    locales: ["es", "en"],
+    routing: {
+      prefixDefaultLocale: true,
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
     ssr: {
@@ -28,18 +35,6 @@ export default defineConfig({
       PHONE_NUMBER: envField.string({
         context: "server",
         access: "public",
-      }),
-      EMAIL_PORT: envField.string({
-        context: "server",
-        access: "secret",
-      }),
-      USER: envField.string({
-        context: "server",
-        access: "secret",
-      }),
-      PASSKEY: envField.string({
-        context: "server",
-        access: "secret",
       }),
     },
   },

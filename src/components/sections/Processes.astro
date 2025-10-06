@@ -1,7 +1,7 @@
 ---
 import Process from "@components/ui/Process.astro";
 const link = Astro.props.link;
-const processes: MahoyProcessStep[] = Astro.props.processes;
+const processes = Astro.props.processes;
 ---
 
 <section
@@ -14,6 +14,6 @@ const processes: MahoyProcessStep[] = Astro.props.processes;
     {link}
   </h2>
   <div class="w-full grid grid-cols-1 sm:grid-cols-2">
-    {processes.map((process) => <Process process={process} />)}
+    {processes.map((process) => <Process {process} />)}
   </div>
 </section>

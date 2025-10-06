@@ -1,10 +1,5 @@
 ---
-import ContactForm from "@components/ui/ContactForm.astro";
-import SocialMedia from "./SocialMedia.astro";
-
-const { title, description, email, telephone, form }: MahoyContact =
-  Astro.props.contact;
-const socialMedia = Astro.props.socialMedia;
+const { title, description } = Astro.props.contact;
 const link = Astro.props.link;
 ---
 
